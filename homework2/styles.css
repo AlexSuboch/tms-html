@@ -17,6 +17,7 @@ body{
 .block{
     display: inline-block;
     width: 33.3%;
+    margin: 0 2%;
 
 }
 
@@ -24,15 +25,5 @@ body{
     display: flex;
     flex-direction: row;
     text-align: center;
-    margin-top: 7%;
-
-}
-.adv1{
-    margin-left: 10%;
-    margin-right: 3%;
-}
-
-.adv3{
-    margin-right: 10%;
-    margin-left: 3%;
+    margin: 7% 10%;
 }
