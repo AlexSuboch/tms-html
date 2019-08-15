@@ -2,26 +2,37 @@ body{
     background-color: white;
 }
 
+.line{
+    height: 2px;
+    width: 30px;
+    background-color: orangered;
+    display: inline-block;
+}
+
 .header{
     text-align: center;
     margin-top: 8%
 }
 
 .block{
-    width: 20%;
     display: inline-block;
+    width: 33.3%;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
     text-align: center;
-    margin: 150px 0 ;
-}
+    margin-top: 7%;
 
+}
 .adv1{
-    margin: 150px 20px 150px 333px;
-}
-
-.adv2{
-    margin: 150px 20px 150px 20px ;
+    margin-left: 10%;
+    margin-right: 5%;
 }
 
 .adv3{
-    margin: 150px 333px 150px 20px;
+    margin-right: 10%;
+    margin-left: 5%;
 }
