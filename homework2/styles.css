@@ -1,0 +1,27 @@
+body{
+    background-color: white;
+}
+
+.header{
+    text-align: center;
+    margin-top: 5%
+}
+
+.block{
+    width: 20%;
+    display: inline-block;
+    text-align: center;
+    margin: 150px 0 ;
+}
+
+.adv1{
+    margin: 150px 20px 150px 333px;
+}
+
+.adv2{
+    margin: 150px 20px 150px 20px ;
+}
+
+.adv3{
+    margin: 150px 333px 150px 20px;
+}
