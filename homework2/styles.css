@@ -2,22 +2,36 @@ body{
     background-color: white;
 }
 
+.raleway{
+    font-family: 'Raleway', sans-serif;
+    font-style: unset;
+
+}
+
+.opensans{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.logo{
+    font-size: 36px;
+}
+
 .line{
     height: 2px;
-    width: 30px;
+    width: 60px;
     background-color: orangered;
     display: inline-block;
+    border-radius: 3px;
 }
 
 .header{
     text-align: center;
-    margin-top: 8%
+    margin-top: 2%;
 }
 
 .block{
     width: 33.3%;
     margin: 0 2%;
-
 }
 
 .container{
@@ -26,3 +40,49 @@ body{
     text-align: center;
     margin: 7% 10%;
 }
+
+.footer{
+    text-align: center;
+    color: whitesmoke;
+    margin: 2%;
+}
+
+.image{
+    background-size: cover;
+    background-image: url(assets/images/background2.jpg);
+    /*filter: brightness(50%);*/
+}
+
+.bcolor{
+    background-color:rgba(0,0,0,0.5);
+}
+
+.footLogo{
+    text-transform: uppercase;
+    padding-top: 3%;
+    font-size: 36px;
+}
+
+.footLine{
+    width: 100px;
+    height: 2px;
+    background-color: gray;
+    display: inline-block;
+    border-radius: 2px;
+    }
+
+.footInfo{
+    padding-top: 2%;
+}
+
+.footButton{
+    padding: 2% 0;
+}
+ a{
+     text-decoration: none;
+     border: 1px solid whitesmoke;
+     font-family: 'Open Sans', sans-serif;
+     text-transform: uppercase;
+     padding: 0.5% 1%;
+     color: whitesmoke;
+ }
