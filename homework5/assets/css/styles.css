@@ -482,7 +482,13 @@ a {
 
 /*contacts*/
 
-.logo {
+.contacts__logo {
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    letter-spacing: -0.2px;
+    word-spacing: -0.9px;
+    margin-bottom: 28px;
     margin-top: 108px;
 }
 
