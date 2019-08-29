@@ -334,6 +334,26 @@ a {
 
 /*pricing*/
 
+.pricing__logo{
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    letter-spacing: -0.2px;
+    word-spacing: -0.9px;
+    margin-top: 0;
+    margin-bottom: 28px;
+}
+
+.pricing__logo:after {
+    content: '';
+    width: 64px;
+    height: 2px;
+    background-color: #ff8b38;
+    display: block;
+    margin: 24px auto 0;
+
+}
+
 .price__blocks {
     display: flex;
     flex-flow: row nowrap;
