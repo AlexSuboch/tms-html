@@ -28,7 +28,6 @@ body {
     background-color: #ff8b38;
     display: block;
     margin: 24px auto 0;
-
 }
 
 .description {
@@ -334,7 +333,7 @@ a {
 
 /*pricing*/
 
-.pricing__logo{
+.pricing__logo {
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
     font-size: 36px;
@@ -457,6 +456,15 @@ a {
 }
 
 .feedback__logo:after {
+    content: '';
+    width: 64px;
+    height: 2px;
+    background-color: #ff8b38;
+    display: block;
+    margin: 20px auto 0;
+}
+
+.feedback__logo:after {
     background-color: #ffffff;
 }
 
@@ -490,6 +498,15 @@ a {
     word-spacing: -0.9px;
     margin-bottom: 28px;
     margin-top: 108px;
+}
+
+.contacts__logo:after {
+    content: '';
+    width: 64px;
+    height: 2px;
+    background-color: #ff8b38;
+    display: block;
+    margin: 20px auto 0;
 }
 
 .contacts__forms {
