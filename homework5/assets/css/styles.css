@@ -46,10 +46,9 @@ a {
     color: #eae9e8;
 }
 
-.header {
+header {
     height: 68px;
     margin: 0 auto;
-    width: 1400px;
     background-color: black;
     display: flex;
     flex-flow: row nowrap;
@@ -59,8 +58,7 @@ a {
 
 .banner {
     margin: 0 auto;
-    width: 1400px;
-    background-image: url("../images/background3.png");
+    background-image: url("../images/banner_background.png");
 }
 
 /*social*/
@@ -68,30 +66,31 @@ a {
 .advantages {
     margin: 0 auto;
     padding: 108px 0;
-    width: 1400px;
 }
 
 .pricing {
     margin: 0 auto;
     padding: 108px 0 96px;
-    width: 1400px;
     background-color: #f5f5f5;
+}
+
+.testimonials{
+    margin: 0 auto;
+    padding: 110px 0 102px;
 }
 
 .feedback {
     margin: 0 auto;
-    width: 1400px;
-    background-image: url("../images/aaa.png");
+    background-image: url("../images/feedback_background.png");
     background-size: cover;
     padding-bottom: 64px;
 }
 
 /*contacts*/
 
-.footer {
+footer {
     margin: 0 auto;
     padding: 38px 0 14px;
-    width: 1400px;
     background-color: black;
 }
 
@@ -331,6 +330,26 @@ a {
     word-spacing: -2px;
 }
 
+.icon{
+    display: inline-block;
+    margin: 0;
+    height: 70px;
+    width: 70px;
+    background: url(../icons/advantages_icons.png) no-repeat;
+}
+
+.icon.adv_first{
+    background-position: 0 0;
+}
+
+.icon.adv_second {
+    background-position: -70px 0;
+}
+
+.icon.adv_third{
+    background-position: -140px 0;
+}
+
 /*pricing*/
 
 .pricing__logo {
@@ -439,6 +458,62 @@ a {
 
 .price__block__middle {
     margin: 0 38px;
+}
+
+/*testimonials*/
+
+._testimonials{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.testimonial{
+    margin: 0 38px;
+}
+
+.review{
+    width: 272px;
+    padding: 24px 14px 28px;
+    font-family: "Open Sans", sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    color: #b0b0b3;
+    background-color: #f5f5f5;
+    text-align: left;
+}
+.review:after{
+    content:'';
+    border-top: 25px solid red;
+    border-right: 25px solid transparent;
+    border-left: 25px solid transparent;
+}
+
+.person{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: left;
+    align-items: center;
+}
+
+.testimonial__name__position{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    margin-left: 16px;
+}
+
+.testimonial__name{
+    font-family: 'Open Sans Bold', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.testimonial__position{
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: #a4a5a8;
 }
 
 /*feedback*/
