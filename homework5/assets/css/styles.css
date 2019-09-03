@@ -61,8 +61,14 @@ header {
     background-image: url("../images/banner_background.png");
 }
 
-/*.social{*/
+/*social{*/
 /*}*/
+
+.features{
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    padding: 146px 0 116px;
+}
 
 .advantages {
     margin: 0 auto;
@@ -226,6 +232,10 @@ footer {
 }
 
 .text__form__right, .email__form__right, .password__form__right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     height: 22px;
     border: none;
     width: 286px;
@@ -306,6 +316,78 @@ footer {
 
 .social__icon {
     margin: 0 26px;
+}
+
+/*features*/
+
+._container{
+    margin: 0 auto;
+    width: 1100px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.features_tab{
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 1px auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 110px;
+    background-color: #333333;
+    border-radius: 5px;
+    font-family: 'Open Sans Bold', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.features_tab:hover{
+    background-color: #ff8b38;
+}
+
+.features__center{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 102px;
+}
+
+.features__center__headline{
+    font-family: 'Open Sans Bold', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #000000;
+    margin: 0;
+}
+
+.description._featuresFirst{
+    margin: 30px 0 26px;
+}
+
+.description._features{
+    margin-bottom: 46px;
+}
+
+.features__button{
+    /*margin-top: 1px;*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 120px;
+    height: 44px;
+    font-size: 15px;
+    font-family: "Open Sans SemiBold", sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    background-color: #ff8b38;
+    color: #ffffff;
 }
 
 /*advantages*/
