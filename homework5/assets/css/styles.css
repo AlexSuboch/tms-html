@@ -1,6 +1,6 @@
 @import url('fonts.css');
 
-html{
+html {
     font-size: 62.5%;
 }
 
@@ -9,9 +9,22 @@ body {
     padding: 0;
 }
 
+.row{
+    font-size: 0;
+    margin: 0 -10px;
+}
+
+.col{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
 .container {
     margin: 0 auto;
-    width: 53vw;
+    width: 110rem;
     text-align: center;
 }
 
@@ -66,7 +79,7 @@ header {
     background-size: cover;
 }
 
-.social{
+.social {
     content: '';
     box-shadow: .1rem .1rem .5rem;
     position: relative;
@@ -123,7 +136,7 @@ footer {
 }
 
 .logo__header {
-    margin: 2.2rem 0;
+    margin: 1.2rem 0;
     height: 2.8rem;
     width: 8rem;
 }
@@ -760,4 +773,154 @@ footer {
     font-family: 'Open Sans', sans-serif;
     color: #a4a5a8;
     margin-top: 0;
+}
+
+
+@media (max-width: 640px) {
+    .col-md_1{width: 16.66666667%;}
+    .col-md_2{width: 33.33333333%;}
+    .col-md_3{width: 50%;}
+    .col-md_4{width: 66.66666667%;}
+    .col-md_5{width: 83.33333333%;}
+    .col-md_6{width: 100%;}
+
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+    /*header*/
+
+    .container__header {
+        margin-top: 1.2rem;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo__header {
+        margin: 1.2rem 0;
+        height: 2.8rem;
+        width: 8rem;
+    }
+
+    .header__nav {
+        width: 100vw;
+        justify-content: space-evenly;
+    }
+
+    /*banner*/
+
+    .container__banner {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+
+    .left__banner {
+        width: 100vw;
+        margin: 0;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .logo__banner {
+        text-align: center;
+    }
+
+    .logo__banner:after {
+        display: none;
+    }
+
+    .description__banner {
+        display: none;
+    }
+
+    .button__banner {
+        display: none;
+    }
+
+    .right__banner {
+        align-items: center;
+        width: 100vw;
+    }
+
+    /*social*/
+
+    .social{
+        display: none;
+    }
+
+    /*features*/
+
+    .features {
+        display: none;
+    }
+
+    /*advantages*/
+
+    .container{
+        width: 100vw;
+    }
+
+    .blocks__advantages {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    /*pricing*/
+
+    .price__block{
+        display: none;
+    }
+
+    /*testimonials*/
+
+    .testi{
+    width: 99vw;
+    }
+
+    ._testimonials {
+        flex-flow: column nowrap;
+        margin: 0 auto;
+    }
+
+    .review:after {
+        top: 8.6rem;
+        left: 21rem;
+    }
+
+    .person {
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*contacts*/
+
+    .contacts__textarea{
+        display: none;
+    }
+
+    .contacts__forms{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .contacts__forms__input {
+        width: 75vw;
+    }
+
+    /*footer*/
+
+    footer{
+        width: 100vw;
+    }
+
+    .footer__icons {
+        width: 100vw;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        letter-spacing: 1.6rem;
+    }
 }
