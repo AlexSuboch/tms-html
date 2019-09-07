@@ -354,6 +354,7 @@ footer {
     font-weight: bold;
     font-size: 1.5rem;
     transition: background-color 300ms;
+    padding: .1rem;
 }
 
 .features_tab:hover {
@@ -760,4 +761,3 @@ footer {
     color: #a4a5a8;
     margin-top: 0;
 }
-
