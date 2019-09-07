@@ -1,5 +1,9 @@
 @import url('fonts.css');
 
+html{
+    font-size: 62.5%;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -7,33 +11,33 @@ body {
 
 .container {
     margin: 0 auto;
-    width: 1100px;
+    width: 53vw;
     text-align: center;
 }
 
 .logo {
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
-    font-size: 36px;
-    letter-spacing: -0.2px;
-    word-spacing: -0.9px;
+    font-size: 3.6rem;
+    letter-spacing: -0.02rem;
+    word-spacing: -0.09rem;
     margin-top: 0;
-    margin-bottom: 28px;
+    margin-bottom: 2.8rem;
 }
 
 .logo:after {
     content: '';
-    width: 64px;
-    height: 2px;
+    width: 6.4rem;
+    height: .2rem;
     background-color: #ff8b38;
     display: block;
-    margin: 24px auto 0;
+    margin: 2.4rem auto 0;
 }
 
 .description {
     font-family: 'Open Sans', sans-serif;
     color: #a4a5a8;
-    font-size: 14px;
+    font-size: 1.4rem;
     margin-top: 0;
 }
 
@@ -47,7 +51,7 @@ a {
 }
 
 header {
-    height: 68px;
+    height: 6.8rem;
     margin: 0 auto;
     background-color: black;
     display: flex;
@@ -59,44 +63,50 @@ header {
 .banner {
     margin: 0 auto;
     background-image: url("../images/banner_background.png");
+    background-size: cover;
 }
 
-/*.social{}*/
+.social{
+    content: '';
+    box-shadow: .1rem .1rem .5rem;
+    position: relative;
+    z-index: 0;
+}
 
 .features {
     margin: 0 auto;
     background-color: #f5f5f5;
-    padding: 146px 0 116px;
+    padding: 14.6rem 0 11.6rem;
 }
 
 .advantages {
     margin: 0 auto;
-    padding: 108px 0;
+    padding: 10.8rem 0;
 }
 
 .pricing {
     margin: 0 auto;
-    padding: 108px 0 96px;
+    padding: 10.8rem 0 9.6rem;
     background-color: #f5f5f5;
 }
 
 .testimonials {
     margin: 0 auto;
-    padding: 110px 0 102px;
+    padding: 11rem 0 10.2rem;
 }
 
 .feedback {
     margin: 0 auto;
     background-image: url("../images/feedback_background.png");
     background-size: cover;
-    padding-bottom: 64px;
+    padding-bottom: 6.4rem;
 }
 
 /*contacts*/
 
 footer {
     margin: 0 auto;
-    padding: 38px 0 14px;
+    padding: 3.8rem 0 1.4rem;
     background-color: black;
 }
 
@@ -106,17 +116,18 @@ footer {
 
 .container__header {
     background-color: black;
-    width: 1100px;
+    width: 110rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
 }
 
 .logo__header {
-    margin: 22px 0;
-    height: 28px;
-    width: 80px;
+    margin: 2.2rem 0;
+    height: 2.8rem;
+    width: 8rem;
 }
+
 
 .header__nav {
     width: 40%;
@@ -128,14 +139,14 @@ footer {
     justify-content: space-between;
     color: #b0b0b0;
     font-family: "Open Sans Bold", sans-serif;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 /*banner*/
 
 .container__banner {
     margin: 0 auto;
-    width: 1100px;
+    width: 110rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -147,19 +158,19 @@ footer {
 }
 
 .image__logo__banner {
-    margin: 120px 0 32px;
-    height: 60px;
-    width: 176px;
+    margin: 12rem 0 3.2rem;
+    height: 6rem;
+    width: 17.6rem;
 }
 
 .logo__banner {
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
-    font-size: 36px;
-    letter-spacing: -0.2px;
-    word-spacing: -0.9px;
+    font-size: 3.6rem;
+    letter-spacing: -0.02rem;
+    word-spacing: -0.09rem;
     margin-top: 0;
-    margin-bottom: 28px;
+    margin-bottom: 2.8rem;
     color: white;
     text-align: left;
 }
@@ -167,16 +178,16 @@ footer {
 .logo__banner:after {
     content: '';
     display: block;
-    width: 64px;
-    height: 2px;
+    width: 6.4rem;
+    height: 0.2rem;
     background-color: #ffffff;
-    margin: 40px 0;
+    margin: 4rem 0;
 }
 
 .description__banner {
     width: 79%;
-    margin-bottom: 44px;
-    font-size: 16px;
+    margin-bottom: 4.4rem;
+    font-size: 1.6rem;
     font-family: 'Open Sans', sans-serif;
     color: #a4a5a8;
     margin-top: 0;
@@ -184,15 +195,15 @@ footer {
 
 .button__banner {
     display: inline-flex;
-    margin-bottom: 140px;
+    margin-bottom: 14rem;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    width: 136px;
-    height: 42px;
-    font-size: 15px;
+    width: 13.6rem;
+    height: 4.2rem;
+    font-size: 1.5rem;
     font-family: "Open Sans SemiBold", sans-serif;
-    border: 2px solid #f5f5f5;
+    border: .2rem solid #f5f5f5;
 }
 
 .right__banner {
@@ -206,14 +217,14 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 360px;
-    height: 54px;
+    width: 36rem;
+    height: 5.4rem;
     font-family: 'Open Sans Bold', sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 2rem;
     background-color: #f5f5f5;
     margin: 0;
-    border-radius: 4px 4px 0 0;
+    border-radius: .4rem .4rem 0 0;
     border-bottom: none;
 }
 
@@ -226,7 +237,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 360px;
+    width: 36rem;
     background-color: white;
 }
 
@@ -235,43 +246,43 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 22px;
+    height: 2.2rem;
     border: none;
-    width: 286px;
-    border-bottom: 1px solid #d6d6d6;
+    width: 28.6rem;
+    border-bottom: .1rem solid #d6d6d6;
     outline: none;
     opacity: .5;
-    padding: 10px 14px;
+    padding: 1rem 1.4rem;
 }
 
 .text__form__right, .email__form__right, .password__form__right::placeholder {
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 1.4rem;
     /*color: #bdbdbd;*/
 }
 
 .text__form__right {
-    margin-top: 30px;
-    margin-bottom: 36px;
+    margin-top: 3rem;
+    margin-bottom: 3.6rem;
 }
 
 .email__form__right {
-    margin-bottom: 46px;
+    margin-bottom: 4.6rem;
 }
 
 .password__form__right {
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
 }
 
 .button__right {
-    height: 54px;
-    width: 360px;
+    height: 5.4rem;
+    width: 36rem;
     background-color: #ff8b38;
     border: none;
     font-family: "Open Sans SemiBold", sans-serif;
-    font-size: 15px;
+    font-size: 1.5rem;
     color: #ffffff;
-    border-radius: 0 0 4px 4px;
+    border-radius: 0 0 .4rem .4rem;
     outline: none;
 }
 
@@ -294,16 +305,16 @@ footer {
 .logo__social {
     font-family: 'Open Sans Bold', sans-serif;
     font-weight: bold;
-    font-size: 20px;
-    margin: 22px 0 0;
+    font-size: 2rem;
+    margin: 2.2rem 0 0;
 }
 
 .description__social {
     font-family: "Open Sans", sans-serif;
-    font-size: 14px;
+    font-size: 1.4rem;
     text-align: left;
     color: #c3c3c5;
-    margin: 6px 0 22px;
+    margin: .6rem 0 2.2rem;
 }
 
 .right__social {
@@ -313,14 +324,14 @@ footer {
 }
 
 .social__icon {
-    margin: 0 26px;
+    margin: 0 2.6rem;
 }
 
 /*features*/
 
 ._container {
     margin: 0 auto;
-    width: 1100px;
+    width: 110rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -330,18 +341,18 @@ footer {
 .features_tab {
     text-transform: uppercase;
     color: #ffffff;
-    margin: 1px auto;
+    margin: .1rem auto;
     display: flex;
     flex-flow: row;
     justify-content: center;
     align-items: center;
-    width: 110px;
-    height: 110px;
+    width: 11rem;
+    height: 11rem;
     background-color: #333333;
-    border-radius: 5px;
+    border-radius: .5rem;
     font-family: 'Open Sans Bold', sans-serif;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 1.5rem;
     transition: background-color 300ms;
 }
 
@@ -354,37 +365,37 @@ footer {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: flex-start;
-    margin: 0 102px;
+    margin: 0 10.2rem;
 }
 
 .features__center__headline {
     font-family: 'Open Sans Bold', sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 2rem;
     color: #000000;
     margin: 0;
 }
 
 .description._featuresFirst {
-    margin: 30px 0 26px;
+    margin: 3rem 0 2.6rem;
 }
 
 .description._features {
-    margin-bottom: 46px;
+    margin-bottom: 4.6rem;
 }
 
 .features__button {
-    /*margin-top: 1px;*/
+    /*margin-top: .1rem;*/
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    width: 120px;
-    height: 44px;
-    font-size: 15px;
+    width: 12rem;
+    height: 4.4rem;
+    font-size: 1.5rem;
     font-family: "Open Sans SemiBold", sans-serif;
     font-weight: bold;
     border: none;
-    border-radius: 3px;
+    border-radius: .3rem;
     background-color: #ff8b38;
     color: #ffffff;
 }
@@ -395,28 +406,28 @@ footer {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
-    padding-top: 62px;
+    padding-top: 6.2rem;
 }
 
 .block__advantages {
     width: 33%;
-    padding-right: 15px;
-    margin: 2px 0;
+    padding: 0 .5rem;
+    margin: .2rem 0;
 }
 
 .slogan__advantages {
     font-family: 'Open Sans Bold', sans-serif;
     font-weight: bold;
-    font-size: 20px;
-    letter-spacing: 1px;
-    word-spacing: -2px;
+    font-size: 2rem;
+    letter-spacing: .1rem;
+    word-spacing: -.2rem;
 }
 
 .icon {
     display: inline-block;
     margin: 0;
-    height: 70px;
-    width: 70px;
+    height: 7rem;
+    width: 7rem;
     background: url(../icons/advantages_icons.png) no-repeat;
 }
 
@@ -425,11 +436,11 @@ footer {
 }
 
 .icon.adv_second {
-    background-position: -70px 0;
+    background-position: -7rem 0;
 }
 
 .icon.adv_third {
-    background-position: -140px 0;
+    background-position: -14rem 0;
 }
 
 /*pricing*/
@@ -437,20 +448,20 @@ footer {
 .pricing__logo {
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
-    font-size: 36px;
-    letter-spacing: -0.2px;
-    word-spacing: -0.9px;
+    font-size: 3.6rem;
+    letter-spacing: -0.02rem;
+    word-spacing: -0.09rem;
     margin-top: 0;
-    margin-bottom: 28px;
+    margin-bottom: 2.8rem;
 }
 
 .pricing__logo:after {
     content: '';
-    width: 64px;
-    height: 2px;
+    width: 6.4rem;
+    height: .2rem;
     background-color: #ff8b38;
     display: block;
-    margin: 24px auto 0;
+    margin: 2.4rem auto 0;
 
 }
 
@@ -458,7 +469,7 @@ footer {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
-    margin-top: 80px;
+    margin-top: 8rem;
     align-items: flex-end;
 }
 
@@ -469,35 +480,35 @@ footer {
     align-items: center;
     font-family: Open Sans Bold, sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 2rem;
     color: #ffffff;
     background-color: #333333;
-    width: 344px;
-    height: 60px;
-    border-bottom: 1px solid white;
+    width: 34.4rem;
+    height: 6rem;
+    border-bottom: .1rem solid white;
 
 }
 
 .two {
     font-family: Raleway, sans-serif;
     font-weight: bold;
-    height: 100px;
+    height: 10rem;
 }
 
 .three {
-    border-bottom: 5px solid #ff8b38;
+    border-bottom: .5rem solid #ff8b38;
     font-family: 'Open Sans', sans-serif;
     font-style: italic;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #999999;
-    height: 50px;
+    height: 5rem;
 }
 
 .four {
     background-color: #ff8b38;
     text-transform: uppercase;
-    font-size: 14px;
-    height: 40px;
+    font-size: 1.4rem;
+    height: 4rem;
 }
 
 .first, .second, .third {
@@ -505,11 +516,11 @@ footer {
 }
 
 .second {
-    font-size: 92px;
+    font-size: 9.2rem;
 }
 
 .dol {
-    font-size: 34px;
+    font-size: 3.4rem;
 }
 
 .price__block__ul {
@@ -524,13 +535,13 @@ footer {
     justify-content: center;
     align-items: center;
     font-family: "Open Sans", sans-serif;
-    font-size: 14px;
-    width: 344px;
-    height: 40px;
+    font-size: 1.4rem;
+    width: 34.4rem;
+    height: 4rem;
     text-transform: uppercase;
     color: #c3c3c5;
     background-color: white;
-    border-bottom: 1px solid #f5f5f5;
+    border-bottom: .1rem solid #f5f5f5;
     transition: all 200ms 100ms;
 }
 
@@ -540,7 +551,7 @@ footer {
 }
 
 .price__block__middle {
-    margin: 0 38px;
+    margin: 0 3.8rem;
 }
 
 /*testimonials*/
@@ -553,29 +564,29 @@ footer {
 }
 
 .testimonial {
-    margin: 60px 38px 0;
+    margin: 6rem 3.8rem 0;
 }
 
 .review {
     position: relative;
-    padding: 24px 13px 28px;
+    padding: 2.4rem 1.3rem 2.8rem;
     font-family: "Open Sans", sans-serif;
     font-style: italic;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #b0b0b3;
     background-color: #f5f5f5;
     text-align: left;
-    margin: 0 -40px 24px;
+    margin: 0 -4rem 2.4rem;
 }
 
 .review:after {
     content: '';
     position: absolute;
-    top: 146px;
-    left: 30px;
-    border-top: 15px solid #f5f5f5;
-    border-right: 10px solid transparent;
-    border-left: 10px solid transparent;
+    top: 14.6rem;
+    left: 3rem;
+    border-top: 1.5rem solid #f5f5f5;
+    border-right: 1rem solid transparent;
+    border-left: 1rem solid transparent;
 }
 
 .person {
@@ -589,18 +600,18 @@ footer {
     display: flex;
     flex-flow: column nowrap;
     align-items: flex-start;
-    margin-left: 16px;
+    margin-left: 1.6rem;
 }
 
 .testimonial__name {
     font-family: 'Open Sans Bold', sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .testimonial__position {
     font-family: "Open Sans", sans-serif;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #a4a5a8;
 }
 
@@ -608,23 +619,23 @@ footer {
 
 .feedback__logo {
     color: #ffffff;
-    padding-top: 75px;
+    padding-top: 7.5rem;
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
-    font-size: 36px;
-    letter-spacing: -0.2px;
-    word-spacing: -0.9px;
+    font-size: 3.6rem;
+    letter-spacing: -0.02rem;
+    word-spacing: -0.09rem;
     margin-top: 0;
-    margin-bottom: 28px;
+    margin-bottom: 2.8rem;
 }
 
 .feedback__logo:after {
     content: '';
-    width: 64px;
-    height: 2px;
+    width: 6.4rem;
+    height: .2rem;
     background-color: #ff8b38;
     display: block;
-    margin: 20px auto 0;
+    margin: 2rem auto 0;
 }
 
 .feedback__logo:after {
@@ -634,8 +645,8 @@ footer {
 .feedback__description {
     font-family: 'Raleway', sans-serif;
     color: #a4a5a8;
-    margin: 0 0 34px;
-    font-size: 16px;
+    margin: 0 0 3.4rem;
+    font-size: 1.6rem;
 }
 
 .feedback__button {
@@ -644,11 +655,11 @@ footer {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    width: 136px;
-    height: 42px;
-    font-size: 15px;
+    width: 13.6rem;
+    height: 4.2rem;
+    font-size: 1.5rem;
     font-family: "Open Sans SemiBold", sans-serif;
-    border: 2px solid #f5f5f5;
+    border: .2rem solid #f5f5f5;
 }
 
 /*contacts*/
@@ -656,43 +667,43 @@ footer {
 .contacts__logo {
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
-    font-size: 36px;
-    letter-spacing: -0.2px;
-    word-spacing: -0.9px;
-    margin-bottom: 28px;
-    margin-top: 108px;
+    font-size: 3.6rem;
+    letter-spacing: -0.02rem;
+    word-spacing: -0.09rem;
+    margin-bottom: 2.8rem;
+    margin-top: 10.8rem;
 }
 
 .contacts__logo:after {
     content: '';
-    width: 64px;
-    height: 2px;
+    width: 6.4rem;
+    height: .2rem;
     background-color: #ff8b38;
     display: block;
-    margin: 20px auto 0;
+    margin: 2rem auto 0;
 }
 
 .contacts__forms {
-    padding: 74px 0 42px;
+    padding: 7.4rem 0 4.2rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
 }
 
 .contacts__left {
-    height: 200px;
+    height: 20rem;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
 }
 
 .contacts__forms__input {
-    height: 32px;
-    width: 526px;
+    height: 3.2rem;
+    width: 52.6rem;
     border: hidden;
-    border-bottom: 1px solid #d6d6d6;
+    border-bottom: .1rem solid #d6d6d6;
     font-family: "Open Sans", sans-serif;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #d6d6d6;
     outline: none;
 }
@@ -705,13 +716,13 @@ footer {
     margin: 0;
     resize: none;
     font-family: "Open Sans", sans-serif;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #d6d6d6;
-    height: 200px;
+    height: 20rem;
     border: none;
-    border-bottom: 1px solid #d6d6d6;;
-    width: 526px;
-    padding-top: 8px;
+    border-bottom: .1rem solid #d6d6d6;;
+    width: 52.6rem;
+    padding-top: .8rem;
     box-sizing: border-box;
     outline: none;
 }
@@ -722,14 +733,14 @@ footer {
 
 .contacts__sendMessage {
     background-color: #ff8b38;
-    border-radius: 2px;
+    border-radius: .2rem;
     font-family: "Open Sans", sans-serif;
-    font-size: 15px;
+    font-size: 1.5rem;
     color: white;
-    height: 46px;
+    height: 4.6rem;
     border: none;
-    width: 144px;
-    margin-bottom: 82px;
+    width: 14.4rem;
+    margin-bottom: 8.2rem;
 }
 
 /*footer*/
@@ -738,14 +749,15 @@ footer {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    letter-spacing: 26px;
-    font-size: 22px;
-    margin-bottom: 16px;
+    letter-spacing: 2.6rem;
+    font-size: 2.2rem;
+    margin-bottom: 1.6rem;
 }
 
 .footer__date {
-    font-size: 12px;
+    font-size: 1.2rem;
     font-family: 'Open Sans', sans-serif;
     color: #a4a5a8;
     margin-top: 0;
 }
+
