@@ -29,6 +29,7 @@ body {
 }
 
 .logo {
+    background: none;
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
     font-size: 3.6rem;
@@ -51,7 +52,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #a4a5a8;
     font-size: 1.4rem;
-    margin-top: 0;
+    margin-top: 2.2rem;
 }
 
 i {
@@ -65,7 +66,6 @@ a {
 
 header {
     height: 6.8rem;
-    margin: 0 auto;
     background-color: black;
     display: flex;
     flex-flow: row nowrap;
@@ -74,22 +74,20 @@ header {
 }
 
 .banner {
-    margin: 0 auto;
     background-image: url("../images/banner_background.png");
     background-size: cover;
 }
 
 .social {
-    content: '';
     box-shadow: .1rem .1rem .5rem;
     position: relative;
     z-index: 0;
 }
 
 .features {
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     background-color: #f5f5f5;
-    padding: 14.6rem 0 11.6rem;
+    padding: 7rem 0 7rem;
 }
 
 .advantages {
@@ -98,18 +96,18 @@ header {
 }
 
 .pricing {
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     padding: 10.8rem 0 9.6rem;
     background-color: #f5f5f5;
 }
 
 .testimonials {
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     padding: 11rem 0 10.2rem;
 }
 
 .feedback {
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     background-image: url("../images/feedback_background.png");
     background-size: cover;
     padding-bottom: 6.4rem;
@@ -118,7 +116,7 @@ header {
 /*contacts*/
 
 footer {
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     padding: 3.8rem 0 1.4rem;
     background-color: black;
 }
@@ -127,7 +125,7 @@ footer {
 
 /*header*/
 
-.container__header {
+.container.header {
     background-color: black;
     width: 110rem;
     display: flex;
@@ -135,7 +133,7 @@ footer {
     justify-content: space-between;
 }
 
-.logo__header {
+.logo.header {
     margin: 1.2rem 0;
     height: 2.8rem;
     width: 8rem;
@@ -157,7 +155,7 @@ footer {
 
 /*banner*/
 
-.container__banner {
+.container.banner {
     margin: 0 auto;
     width: 110rem;
     display: flex;
@@ -171,24 +169,20 @@ footer {
 }
 
 .image__logo__banner {
+    display: flex;
+    justify-content: left;
     margin: 12rem 0 3.2rem;
     height: 6rem;
     width: 17.6rem;
 }
 
-.logo__banner {
-    text-transform: uppercase;
-    font-family: 'Raleway', sans-serif;
-    font-size: 3.6rem;
-    letter-spacing: -0.02rem;
-    word-spacing: -0.09rem;
-    margin-top: 0;
-    margin-bottom: 2.8rem;
+.logo.banner {
+    background: none;
     color: white;
     text-align: left;
 }
 
-.logo__banner:after {
+.logo.banner:after {
     content: '';
     display: block;
     width: 6.4rem;
@@ -204,10 +198,11 @@ footer {
     font-family: 'Open Sans', sans-serif;
     color: #a4a5a8;
     margin-top: 0;
+    text-align: left;
 }
 
 .button__banner {
-    display: inline-flex;
+    display: flex;
     margin-bottom: 14rem;
     flex-flow: row wrap;
     justify-content: center;
@@ -315,11 +310,16 @@ footer {
     width: 37%;
 }
 
-.logo__social {
+.logo.social {
     font-family: 'Open Sans Bold', sans-serif;
     font-weight: bold;
     font-size: 2rem;
     margin: 2.2rem 0 0;
+    box-shadow: none;
+}
+
+.logo.social:after{
+    display: none;
 }
 
 .description__social {
@@ -342,9 +342,7 @@ footer {
 
 /*features*/
 
-._container {
-    margin: 0 auto;
-    width: 110rem;
+.container.features {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -390,11 +388,13 @@ footer {
     margin: 0;
 }
 
-.description._featuresFirst {
+.description._featuresFirst{
+    text-align: left;
     margin: 3rem 0 2.6rem;
 }
 
 .description._features {
+    text-align: left;
     margin-bottom: 4.6rem;
 }
 
@@ -458,26 +458,6 @@ footer {
 }
 
 /*pricing*/
-
-.pricing__logo {
-    text-transform: uppercase;
-    font-family: 'Raleway', sans-serif;
-    font-size: 3.6rem;
-    letter-spacing: -0.02rem;
-    word-spacing: -0.09rem;
-    margin-top: 0;
-    margin-bottom: 2.8rem;
-}
-
-.pricing__logo:after {
-    content: '';
-    width: 6.4rem;
-    height: .2rem;
-    background-color: #ff8b38;
-    display: block;
-    margin: 2.4rem auto 0;
-
-}
 
 .price__blocks {
     display: flex;
@@ -596,8 +576,8 @@ footer {
 .review:after {
     content: '';
     position: absolute;
-    top: 14.6rem;
-    left: 3rem;
+    bottom: -1.5rem;
+    left: 2.5rem;
     border-top: 1.5rem solid #f5f5f5;
     border-right: 1rem solid transparent;
     border-left: 1rem solid transparent;
@@ -631,29 +611,19 @@ footer {
 
 /*feedback*/
 
-.feedback__logo {
+.feedback.logo {
     color: #ffffff;
     padding-top: 7.5rem;
-    text-transform: uppercase;
-    font-family: 'Raleway', sans-serif;
-    font-size: 3.6rem;
-    letter-spacing: -0.02rem;
-    word-spacing: -0.09rem;
-    margin-top: 0;
-    margin-bottom: 2.8rem;
+    padding-bottom: 0;
+    background: none;
 }
 
-.feedback__logo:after {
+.feedback.logo:after {
     content: '';
     width: 6.4rem;
     height: .2rem;
-    background-color: #ff8b38;
-    display: block;
-    margin: 2rem auto 0;
-}
-
-.feedback__logo:after {
     background-color: #ffffff;
+    display: block;
 }
 
 .feedback__description {
@@ -678,7 +648,7 @@ footer {
 
 /*contacts*/
 
-.contacts__logo {
+.contacts.logo {
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
     font-size: 3.6rem;
@@ -688,7 +658,7 @@ footer {
     margin-top: 10.8rem;
 }
 
-.contacts__logo:after {
+.contacts.logo:after {
     content: '';
     width: 6.4rem;
     height: .2rem;
@@ -786,9 +756,18 @@ footer {
 
     /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
+    .container{
+        width: 100vw;
+        /*padding: 0 .5rem;*/
+    }
+
+    .logo{
+        margin: 0 auto;
+    }
+
     /*header*/
 
-    .container__header {
+    .container.header {
         margin-top: 1.2rem;
         display: flex;
         flex-flow: column nowrap;
@@ -809,7 +788,7 @@ footer {
 
     /*banner*/
 
-    .container__banner {
+    .container.banner {
         width: 100vw;
         display: flex;
         flex-flow: column nowrap;
@@ -824,11 +803,12 @@ footer {
         align-items: center;
     }
 
-    .logo__banner {
+    .logo.banner {
         text-align: center;
+        margin: 0 auto;
     }
 
-    .logo__banner:after {
+    .logo.banner:after {
         display: none;
     }
 
@@ -843,6 +823,7 @@ footer {
     .right__banner {
         align-items: center;
         width: 100vw;
+        margin: .8rem auto;
     }
 
     /*social*/
@@ -859,10 +840,6 @@ footer {
 
     /*advantages*/
 
-    .container{
-        width: 100vw;
-    }
-
     .blocks__advantages {
         flex-flow: column nowrap;
         align-items: center;
@@ -877,7 +854,7 @@ footer {
     /*testimonials*/
 
     .testi{
-    width: 99vw;
+        margin: 0 auto;
     }
 
     ._testimonials {
@@ -893,6 +870,12 @@ footer {
     .person {
         justify-content: center;
         align-items: center;
+    }
+
+    /*feedback*/
+
+    .feedback__description{
+        margin: 1.5rem auto;
     }
 
     /*contacts*/
