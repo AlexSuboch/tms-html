@@ -161,6 +161,7 @@ footer {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    background: none;
 }
 
 .left__banner {
@@ -787,12 +788,17 @@ footer {
     }
 
     /*banner*/
-
+/*
+    .banner{
+       background: none;
+    }
+*/
     .container.banner {
         width: 100vw;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
+        background: none;
     }
 
     .left__banner {
@@ -862,13 +868,8 @@ footer {
         margin: 0 auto;
     }
 
-    .review:after {
-        top: 8.6rem;
-        left: 21rem;
-    }
-
     .person {
-        justify-content: center;
+        justify-content: start;
         align-items: center;
     }
 
