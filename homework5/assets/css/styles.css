@@ -158,9 +158,12 @@ footer {
 .container.banner {
     margin: 0 auto;
     width: 110rem;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
+    /*display: flex;*/
+    /*flex-flow: row nowrap;*/
+    /*justify-content: space-between;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
     background: none;
 }
 
